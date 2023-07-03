@@ -7,10 +7,10 @@ class Kaytu < Formula
   license "MIT"
 
   def install
-    bin.install "kaytu"
+    bin.install "ktucli-macos-amd64"
   end
 
   test do
-    system "#{bin}/kaytu", "--version"
+    system "#{bin}/ktucli-macos-amd64", "--version"
   end
 end
