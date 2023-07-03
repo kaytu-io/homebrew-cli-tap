@@ -22,7 +22,7 @@ class Kaytu < Formula
   end
 
   def install
-    file = Dir.glob("#{prefix}/bin/ktucli*").first
+    file = Dir.glob("#{prefix}/ktucli*").first
     FileUtils.ln file, "#{prefix}/bin/kaytu"
     bin.install_symlink bin/"kaytu"
   end
