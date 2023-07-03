@@ -8,17 +8,17 @@ class Kaytu < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/kaytu-io/cli-program/releases/download/v1.3.13/ktucli-macos-amd64"
-    sha256 "ce02a97fb95aca9bba44413d4158f5f2c182f5eb2823bedf1400f556bb9b"
+    sha256 "89f4ef14396b9dd75484281ebfac825dc39db335119df09391db9d9919cef11a"
   end
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/kaytu-io/cli-program/releases/download/v1.3.13/ktucli-macos-arm64"
-    sha256 "1c69849ba82c10d15706d110ae63bd97c387da2a8cf925653e1bb5c6fc"
+    sha256 "e95d7ab5ae7d9e129dd4436dcc23451e7a05c21412ee936f47e02bb8129f7e5b"
   end
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/kaytu-io/cli-program/releases/download/v1.3.13/ktucli-linux-arm64"
-    sha256 "89f4ef14396b9dd75484281ebfac825dc39db335119df09391db9d9919cef11a"
+    sha256 "725ef0a6ba18b1164ea7514beb95990b8472b0af0d929e0bf6dc4fda7b8f3a21"
   end
 
   def install
