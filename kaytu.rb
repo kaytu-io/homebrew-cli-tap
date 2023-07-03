@@ -22,12 +22,7 @@ class Kaytu < Formula
   end
 
   def install
-    allF = Dir.glob("#{prefix}/bin/ktucli*")
-    ohai allF
-    file = Dir.glob("#{prefix}/bin/ktucli*").first
-    ohai file
-    ohai "#{prefix}/bin/kaytu"
-    FileUtils.ln file, "#{prefix}/bin/kaytu"
+    system "mv", "#{prefix}/bin/ktucli*", "#{prefix}/bin/kaytu"
     bin.install_symlink bin/"kaytu"
   end
 
