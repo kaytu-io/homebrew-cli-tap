@@ -22,7 +22,9 @@ class Kaytu < Formula
   end
 
   def install
-    file = Dir.glob("#{prefix}/ktucli*").first
+    allF = Dir.glob("#{prefix}/bin/ktucli*")
+    ohai allF
+    file = Dir.glob("#{prefix}/bin/ktucli*").first
     ohai file
     ohai "#{prefix}/bin/kaytu"
     FileUtils.ln file, "#{prefix}/bin/kaytu"
