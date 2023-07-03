@@ -18,7 +18,7 @@ class Kaytu < Formula
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/kaytu-io/cli-program/releases/download/v1.3.13/ktucli-linux-arm64"
-    sha256 "725ef0a6ba18b1164ea7514beb95990b8472b0af0d929e0bf6dc4fda7b8f3a21"
+    sha256 "df56860f136887de9c4567beefa940a30a46b32fe302eb6191a6d2e251a3fcae"
   end
 
   def install
