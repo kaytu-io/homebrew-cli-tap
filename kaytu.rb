@@ -22,7 +22,10 @@ class Kaytu < Formula
   end
 
   def install
-    system "mv", "#{prefix}/bin/ktucli*", "#{prefix}/bin/kaytu"
+    find /home/linuxbrew/.linuxbrew/Cellar/kaytu/1.0.0/bin/ -type f
+    files = system "find", "#{prefix}/bin/", "-type", "f"
+    file = files.first
+    system "mv", "#{file}", "#{prefix}/bin/kaytu"
     bin.install_symlink bin/"kaytu"
   end
 
