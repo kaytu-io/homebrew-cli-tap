@@ -22,9 +22,9 @@ class Kaytu < Formula
   end
 
   def install
-    binfile_with_extension =
-      File.basename(Dir.glob "#{prefix}/bin/ktucli*")
-    bin.install binfile_with_extension => "kaytu"
+    file = Dir.glob("#{prefix}/bin/ktucli*").first
+    FileUtils.ln file, "#{prefix}/bin/kaytu"
+    bin.install_symlink bin/"kaytu"
   end
 
   test do
