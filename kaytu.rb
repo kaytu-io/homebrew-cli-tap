@@ -6,7 +6,7 @@ class Kaytu < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/kaytu-io/cli-program/releases/download/v1.8.42/ktucli-macos-amd64"
-    sha256 "6c5054adf6418de8e802a31437afee485103563fd03c52045c0a64b4e23d8793"  
+    sha256 "ae6bba3aae11cfcc7cffa2ba0aa38681db7e2a82a27beb53750eb9112b4a0c87"  
     def install
       bin.install "ktucli-macos-amd64" => "kaytu"
     end
@@ -14,7 +14,7 @@ class Kaytu < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/kaytu-io/cli-program/releases/download/v1.8.42/ktucli-macos-arm64"
-    sha256 "75a915ef7a9818274e2f6efb8a8a40e94dafc4a50d637ed1533e75204f67ff24"  
+    sha256 "d335a050c46b21f371a12c5f2c58fb632d347170e53b1930f88379b6914e1240"  
     def install
       bin.install "ktucli-macos-arm64" => "kaytu"
     end
@@ -22,7 +22,7 @@ class Kaytu < Formula
 
   if OS.linux? && Hardware::CPU.arm?
     url "https://github.com/kaytu-io/cli-program/releases/download/v1.8.42/ktucli-linux-arm64"
-    sha256 "36613d805be6b6f8d2deb7ab39df0a1b1c763cbdd2e23cbc2720cbc7693c6909"  
+    sha256 "57193c8574f462db9ddeb45163cf4ec12ebc8232598717c7fb0e4c3ba2874e57"  
     def install
       bin.install "ktucli-linux-arm64" => "kaytu"
     end
@@ -30,7 +30,7 @@ class Kaytu < Formula
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/kaytu-io/cli-program/releases/download/v1.8.42/ktucli-linux-amd64"
-    sha256 "0b41a37b508f8fe4df3d08ec5efb4c422a93af15119ba5cf8368a8a0f72019db" 
+    sha256 "121c58ef76564ec32b5cc430f03a9e69d0699d3fbe69d2586c256202c00acbda" 
     def install
       bin.install "ktucli-linux-amd64" => "kaytu"
     end
