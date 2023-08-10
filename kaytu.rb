@@ -6,7 +6,11 @@ class Kaytu < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/kaytu-io/cli-program/releases/download/v1.8.35/ktucli-macos-amd64"
+<<<<<<< HEAD
     sha256 "a0a631d8c674f0086164f057ecbe82813a4e48098ec7dbe81e5d4e26a596f0f2"
+=======
+    sha256 "89f4ef14396b9dd75484281ebfac825dc39db335119df09391db9d9919cef11a"
+>>>>>>> 69bcd725f2e6de50a2b92fd4e688f9f293e55919
     def install
       bin.install "ktucli-macos-amd64" => "kaytu"
     end
