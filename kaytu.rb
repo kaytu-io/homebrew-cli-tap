@@ -14,7 +14,7 @@ class Kaytu < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/kaytu-io/cli-program/releases/download/v1.8.38/ktucli-macos-arm64"
-    sha256 "e95d7ab5ae7d9e129dd4436dcc23451e7a05c21412ee936f47e02bb8129f7e5b"
+$(echo "    sha256 "$(cat newHash)"")
     def install
       bin.install "ktucli-macos-arm64" => "kaytu"
     end
