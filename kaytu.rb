@@ -1,36 +1,36 @@
 class Kaytu < Formula
   desc "CLI application for Kaytu"
   homepage "https://github.com/kaytu-io/cli-program"
-  version "1.14.22"
+  version "1.14.26"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kaytu-io/cli-program/releases/download/v1.14.22/ktucli-macos-amd64"
-    sha256 "a31ddd9973114aaf75c235512d238bc77b9d431acd3171d64d4f1ac9e5e6487e"
+    url "https://github.com/kaytu-io/cli-program/releases/download/v1.14.26/ktucli-macos-amd64"
+    sha256 "b348f08b0c5fa7c1eac0fb666345ae424f026bfa2da3e2988a44dc0fe4c2a6ba"
     def install
       bin.install "ktucli-macos-amd64" => "kaytu"
     end
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kaytu-io/cli-program/releases/download/v1.14.22/ktucli-macos-arm64"
-    sha256 "2e082e6b2efb0bf31f9d29b1f8358a03f98f8b7782f5ccc0de110344a3ace9c4"
+    url "https://github.com/kaytu-io/cli-program/releases/download/v1.14.26/ktucli-macos-arm64"
+    sha256 "59bbd57efb28d4ace42f556af11ce05a30717333f11f0501cb0d0534e2f2344f"
     def install
       bin.install "ktucli-macos-arm64" => "kaytu"
     end
   end
 
   if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/kaytu-io/cli-program/releases/download/v1.14.22/ktucli-linux-arm64"
-    sha256 "0876886fb72649c49745353e6e77d58855b3463ed649e3576adae4be4bd9cf4e"
+    url "https://github.com/kaytu-io/cli-program/releases/download/v1.14.26/ktucli-linux-arm64"
+    sha256 "01f0aedc7bc25cf669e7e0e8219e103b86488f3cda8c94c09e02cd8dcb32de4d"
     def install
       bin.install "ktucli-linux-arm64" => "kaytu"
     end
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kaytu-io/cli-program/releases/download/v1.14.22/ktucli-linux-amd64"
-    sha256 "a1455cc14785115f1bfc7d9e6e6f942c845c8847563417f5d9c8f9456f5e0f22"
+    url "https://github.com/kaytu-io/cli-program/releases/download/v1.14.26/ktucli-linux-amd64"
+    sha256 "ba270faffb97b66b573fcf08e86c93f8005ab1bdbd2a38d76d174cad6335e843"
     def install
       bin.install "ktucli-linux-amd64" => "kaytu"
     end
