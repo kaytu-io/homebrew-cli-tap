@@ -1,39 +1,27 @@
 class Kaytu < Formula
   desc "CLI application for Kaytu"
   homepage "https://github.com/kaytu-io/cli-program"
-  version "0.3.29"
+  version "0.3.30"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.29/kaytu_0.3.29_darwin_amd64.tar.gz"
-    sha256 "c41990c487b9db82e365e21d6ccb30334260e644c29ef5a99d92f41a1eade8bd"
-    def install
-      bin.install "kaytu" => "kaytu"
-    end
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.30/kaytu_0.3.30_darwin_amd64.tar.gz"
+    sha256 "457c08cc201e0f8589d9a1933ccb3f7bd033bc85b259c32e1d93fad621df1a8b"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.29/kaytu_0.3.29_darwin_arm64.tar.gz"
-    sha256 "2d1258c07233609d4bc883932c0709633167862765259be5d1e974cfdbccf6c5"
-    def install
-      bin.install "kaytu" => "kaytu"
-    end
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.30/kaytu_0.3.30_darwin_arm64.tar.gz"
+    sha256 "5a29f2b600f063c2dd973849fb05feb1dc8c52911d61b52650bbb1d74943c307"
   end
 
   if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.29/kaytu_0.3.29_linux_arm64.tar.gz"
-    sha256 "3e1b5a4d9e8b831101e17871d2b0c6e3f66632821808266627a868d7d7a8cd80"
-    def install
-      bin.install "kaytu" => "kaytu"
-    end
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.30/kaytu_0.3.30_linux_arm64.tar.gz"
+    sha256 "d8d193c7eadf8d0059b006b34414b56de728a06f270c6bc911613fd01ba2edb2"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.29/kaytu_0.3.29_linux_amd64.tar.gz"
-    sha256 "44b9d7228d202b00bad826af620e341d2601d56111efd0c4fd38dbbf5b1991cf"
-    def install
-      bin.install "kaytu" => "kaytu"
-    end
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.30/kaytu_0.3.30_linux_amd64.tar.gz"
+    sha256 "8763680aa2b806752066e19fa0dbd6537a156d29b427a383bc0097274102ed71"
   end
 
 
