@@ -1,36 +1,36 @@
 class Kaytu < Formula
   desc "CLI application for Kaytu"
   homepage "https://github.com/kaytu-io/cli-program"
-  version "0.3.42"
+  version "0.3.43"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.42/kaytu_0.3.42_darwin_amd64.tar.gz"
-    sha256 "e1e8fb15a141466c08def24eb4eb796a2db12843d3af5e439fba93faff7067aa"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.43/kaytu_0.3.43_darwin_amd64.tar.gz"
+    sha256 "277fbdb59cea8c847ff961fb93e26fc482db480241de725ba8a103ef9428812d"
     def install
       bin.install "kaytu" => "kaytu"
     end
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.42/kaytu_0.3.42_darwin_arm64.tar.gz"
-    sha256 "ba95acc1eaa4cc6e6844bf36fe65c4201f22d4d26f432a54f5dd14da847f3991"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.43/kaytu_0.3.43_darwin_arm64.tar.gz"
+    sha256 "e48e3e076661fccf71ef9fc5bfc6e9d2eba13a479230d70640aaec1926c4c565"
     def install
       bin.install "kaytu" => "kaytu"
     end
   end
 
   if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.42/kaytu_0.3.42_linux_arm64.tar.gz"
-    sha256 "7f0618a0095a6874f404249c1221d0570b5a95f343573daa6535ac629dceddeb"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.43/kaytu_0.3.43_linux_arm64.tar.gz"
+    sha256 "8ae614be9e1f53f7b04250c1f2fd8be7f66651884da342471b9980cd414b0386"
     def install
       bin.install "kaytu" => "kaytu"
     end
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.42/kaytu_0.3.42_linux_amd64.tar.gz"
-    sha256 "1e3b038c84cd3384e999ff3404b3c252100c6974badc2fa8787b3c6a1069656c"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.43/kaytu_0.3.43_linux_amd64.tar.gz"
+    sha256 "3a9e9bc2a54b9cc6df00c9fa4dc4bcf3e43fe83177876d7c824477704cc5a668"
     def install
       bin.install "kaytu" => "kaytu"
     end
