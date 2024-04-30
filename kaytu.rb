@@ -1,36 +1,36 @@
 class Kaytu < Formula
   desc "CLI application for Kaytu"
   homepage "https://github.com/kaytu-io/cli-program"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.4.1/kaytu_0.4.1_darwin_amd64.tar.gz"
-    sha256 "b86f416921ba71c03c8e544be06c35da4c19d840912872d4e2ee08ac731e62c9"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.5.0/kaytu_0.5.0_darwin_amd64.tar.gz"
+    sha256 "79cbbd1993d61ab94b157b41fbf7d6259c67395869cd7ddae25474a072faf3a7"
     def install
       bin.install "kaytu" => "kaytu"
     end
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.4.1/kaytu_0.4.1_darwin_arm64.tar.gz"
-    sha256 "2a78d950ff6ddc1d0c840a50ebac1ea655c507469061c8af37cc780da5addbaa"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.5.0/kaytu_0.5.0_darwin_arm64.tar.gz"
+    sha256 "b743032bf9b678e83b0186531c58d963fb0629cfbf1852797b8f107bb84fd4c0"
     def install
       bin.install "kaytu" => "kaytu"
     end
   end
 
   if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.4.1/kaytu_0.4.1_linux_arm64.tar.gz"
-    sha256 "aa809889ee1ecdc58f4baa769825462acf6dd69e18c4c5437f1541dd7d3895b6"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.5.0/kaytu_0.5.0_linux_arm64.tar.gz"
+    sha256 "075a35e75f68ff456295a6403d23f72f001e2f1f9a128d54efff1e00c22ac116"
     def install
       bin.install "kaytu" => "kaytu"
     end
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.4.1/kaytu_0.4.1_linux_amd64.tar.gz"
-    sha256 "d7864537d98c3d296123ceadffd1cb7b05cfcff9030ad45c7b02ac3a661da165"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.5.0/kaytu_0.5.0_linux_amd64.tar.gz"
+    sha256 "778fecb880162dd2e0a5cea31511614f238b47e5e0afac8f6a2c81256079de8e"
     def install
       bin.install "kaytu" => "kaytu"
     end
