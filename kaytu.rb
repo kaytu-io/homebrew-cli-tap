@@ -1,36 +1,36 @@
 class Kaytu < Formula
   desc "CLI application for Kaytu"
   homepage "https://github.com/kaytu-io/cli-program"
-  version "0.3.60"
+  version "0.4.0"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.60/kaytu_0.3.60_darwin_amd64.tar.gz"
-    sha256 "bd042ab63cb454968ed0df4532b13dddb0c1dbbad5693cb89b0f40fdc6551172"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.4.0/kaytu_0.4.0_darwin_amd64.tar.gz"
+    sha256 "be5aaa95c2f8749ba9d7ebb51cdf08f5f35794a970fdfb61d089121e3c92bbcc"
     def install
       bin.install "kaytu" => "kaytu"
     end
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.60/kaytu_0.3.60_darwin_arm64.tar.gz"
-    sha256 "35b014a463d2f1e20efe1fcdb15860e413ce6c1a2044a45d0d40a8f492a7a383"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.4.0/kaytu_0.4.0_darwin_arm64.tar.gz"
+    sha256 "3e42c16d220f0a34364afc4cfd5c0647f3c8c8851a80b8e213d5e22097ae6976"
     def install
       bin.install "kaytu" => "kaytu"
     end
   end
 
   if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.60/kaytu_0.3.60_linux_arm64.tar.gz"
-    sha256 "d63bf8b59fdccbb1393681a4becca5534c898d020c574b801585b87c705792a0"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.4.0/kaytu_0.4.0_linux_arm64.tar.gz"
+    sha256 "3540fa13922c9014b5f8ec5d10f52daee7ab2d7905707ce81505c233d0175542"
     def install
       bin.install "kaytu" => "kaytu"
     end
   end
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kaytu-io/kaytu/releases/download/v0.3.60/kaytu_0.3.60_linux_amd64.tar.gz"
-    sha256 "a697c4135d1fad6f30aff662199ae533b35b72aed54d6f3b04111903bef866bf"
+    url "https://github.com/kaytu-io/kaytu/releases/download/v0.4.0/kaytu_0.4.0_linux_amd64.tar.gz"
+    sha256 "094a34c81b3007f607fc54013a2183c08a8cca0e14fa213bc0a47125a36b972a"
     def install
       bin.install "kaytu" => "kaytu"
     end
