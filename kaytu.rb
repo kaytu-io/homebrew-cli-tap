@@ -5,20 +5,20 @@
 class Kaytu < Formula
   desc ""
   homepage "https://github.com/kaytu-io/kaytu"
-  version "0.12.7"
+  version "0.12.8"
 
   on_macos do
     on_intel do
-      url "https://github.com/kaytu-io/kaytu/releases/download/v0.12.7/kaytu_0.12.7_darwin_amd64.tar.gz"
-      sha256 "11c6c458498a25395a4945252cdb867003801662856fcdc689b20c4b31fae263"
+      url "https://github.com/kaytu-io/kaytu/releases/download/v0.12.8/kaytu_0.12.8_darwin_amd64.tar.gz"
+      sha256 "3cb836b048dac03305c117a5799116af8cd1c72180f251877e0742a535a6a9ec"
 
       def install
         bin.install "kaytu"
       end
     end
     on_arm do
-      url "https://github.com/kaytu-io/kaytu/releases/download/v0.12.7/kaytu_0.12.7_darwin_arm64.tar.gz"
-      sha256 "983b523c7f62c6cff76ca91ec15b6fd7410524a327965a4bbda6e56cfb76d199"
+      url "https://github.com/kaytu-io/kaytu/releases/download/v0.12.8/kaytu_0.12.8_darwin_arm64.tar.gz"
+      sha256 "23c1ff5449ef6fe093b8e056e532fb7d169d7bff9ed8daa0ad7f4188f4176756"
 
       def install
         bin.install "kaytu"
@@ -29,8 +29,8 @@ class Kaytu < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kaytu-io/kaytu/releases/download/v0.12.7/kaytu_0.12.7_linux_amd64.tar.gz"
-        sha256 "5074bba0ea661c29bb9fffa19e1d7a162d8c012361c3ed501e57167aa3fba148"
+        url "https://github.com/kaytu-io/kaytu/releases/download/v0.12.8/kaytu_0.12.8_linux_amd64.tar.gz"
+        sha256 "3b1cb80f4def220767c3e665d3cc584159bc3f47b4606a46b4f55a459bcca2dc"
 
         def install
           bin.install "kaytu"
@@ -39,8 +39,8 @@ class Kaytu < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kaytu-io/kaytu/releases/download/v0.12.7/kaytu_0.12.7_linux_arm64.tar.gz"
-        sha256 "b754766fd42750168ce41ea60b81539967b2755b9ae5d462fa3b559aa5d1a367"
+        url "https://github.com/kaytu-io/kaytu/releases/download/v0.12.8/kaytu_0.12.8_linux_arm64.tar.gz"
+        sha256 "95c0122ed73148afa701291f2a24bccbe11f2e2ce3dd45729402ef4dd69a6bb1"
 
         def install
           bin.install "kaytu"
